@@ -15,5 +15,5 @@ export let Brandywine: Activity = new Activity(
     "10AM-4PM",
     "$9",
     "https://brandywinezoo.org",
-    "A zoo full of animals and located along the Brandywine river":
+    "A zoo full of animals and located along the Brandywine river"
 )
