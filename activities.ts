@@ -22,7 +22,7 @@ export let NatureMuseum: Activity = new Activity(
     "Delaware Museum of Nature & Science",
     "4840 Kennet Pike, Wilmington, DE 19807",
     "10AM-4PM",
-    "14.50",
+    "$14.50",
     "https://delmns.org",
     "Explore, Discover, and Protect the environment that you live in!"
 )
