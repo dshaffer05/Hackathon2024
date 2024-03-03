@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Axxiom Escape Rooms </title>
+        <style>
+            /* Center-align the text */
+            h1 {
+                text-align: center;
+                font-size: 75px;
+            }
+            .first-image {
+                margin: 0 auto;
+                display: block;
+                width: 700px;
+                border-radius: 100px;
+                border: 8px solid black; 
+                padding: 5px; 
+            }
+            .activity-info {
+            text-align: center;
+            font-size: 30px;
+            }
+            body {
+                font-size: 24px;
+                text-align: center;
+                background: linear-gradient(to bottom,rgb(157, 250, 143), rgb(72, 141, 61));
+        }
+        </style>
+    </head>
+    <body>
+        <h1 id="activity-name"></h1>
+        <img class="first-image" src="images/escape room 2.jpg"> 
+        <div class="activity-info" id="activity-info"></div>
+
+        <script>
+            class Activity {
+                name; //Name of the activity
+                location; //Address of the activity
+                time; //Time that the activity is open/happening
+                price; // Price of the activity
+                website; // activity website
+                description; // any extra info
+
+            constructor(name, location, time, price, website, description) {
+                this.name = name;
+                this.location = location;
+                this.time = time;
+                this.price = price;
+                this.website = website;
+                this.description = description;
+            }
+        }
+
+        let Axxiom = new Activity(
+            "Axxiom Escape Rooms Newark", 
+            "280 E Main St, Newark, DE 19711", 
+            "11AM-8:30PM",
+            "$28",
+            "https://www.axxiomnewark.com",
+            "Multiple escape rooms for groups 4-12 and any age!"
+        );
+
+        document.getElementById("activity-name").innerText = Axxiom.name;
+        let activityInfoDiv = document.getElementById("activity-info");
+        activityInfoDiv.innerHTML += "<p><b>Location: " + Axxiom.location + "</b></p>";
+        activityInfoDiv.innerHTML += "<p>Time: " + Axxiom.time + "</p>";
+        activityInfoDiv.innerHTML += "<p>Price: " + Axxiom.price + "</p>";
+        activityInfoDiv.innerHTML += "<p>Website: <a href='" + Axxiom.website + "'>" + Axxiom.name + "</a></p>";
+        activityInfoDiv.innerHTML += "<p>Description: " + Axxiom.description + "</p>";
+        </script> 
+
+        <br>
+        <br>
+        <a href="hackathon project.html"><b>Return to Home Page!</b></a>
+
+    </body>
+</html>
