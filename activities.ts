@@ -93,4 +93,4 @@ export let WhiteClay: Activity = new Activity(
     "https://destateparks.com/whiteclaycreek",
     "Go fishing, play disc golf, or explore nature with scenic trails at White Clay Creek State Park"
 )
-export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum, SkyZone, MainEvent, Taverna, SportsCenter, HomeGrown];
+export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum, SkyZone, MainEvent, Taverna, SportsCenter, HomeGrown, WhiteClay];
