@@ -15,5 +15,23 @@ export let Brandywine: Activity = new Activity(
     "10AM-4PM",
     "$9",
     "https://brandywinezoo.org",
-    "A zoo full of animals and located along the Brandywine river"
+    "A zoo full of animals located along the Brandywine river!"
+)
+
+export let NatureMuseum: Activity = new Activity(
+    "Delaware Museum of Nature & Science",
+    "4840 Kennet Pike, Wilmington, DE 19807",
+    "10AM-4PM",
+    "14.50",
+    "https://delmns.org",
+    "Explore, Discover, and Protect the environment that you live in!"
+)
+
+export let ArtMuseum: Activity = new Activity(
+    "Delaware Art Musuem",
+    "2301 Kentmere Pkwy, Wilmington DE 19806",
+    "10AM-4PM",
+    "$7",
+    "https://delart.org",
+    "Explore classic collecttions of artwork and discover the deeper meaning behind the pieces!"
 )
