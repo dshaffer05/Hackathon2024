@@ -55,6 +55,7 @@ export let MainEvent: Activity = new Activity(
     `Main Event is full of a wide array of highly-enjoyable games
      such as bowling, arcade games, virtual reality, or any other game you can think of!`
 )
+
 export let Taverna: Activity = new Activity(
     "Taverna Rustic Italian",
     "121 Main St. Newark, DE 19711",
@@ -64,4 +65,13 @@ export let Taverna: Activity = new Activity(
     "Enjoy rustic Italian cuisine with friends and family!"
 )
 
-export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum, SkyZone, Taverna];
+export let SportsCenter: Activity = new Activity(
+    "Vince's Sports Center",
+    "14 Gender Rd, Newark, DE 19713",
+    "10AM-9PM",
+    "$8",
+    "http://www.vincessports.com/",
+    `Vince's Sports Center's main attraction is its mini-golf course, but you must not 
+    forget itself incredible indoor hitting cage and range of arcade games`
+)
+export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum, SkyZone, MainEvent, Taverna, SportsCenter];
