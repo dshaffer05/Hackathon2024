@@ -1,3 +1,4 @@
+/**Creators: Andrew Shaffer, Thomas Glenn, Janek Schnitzer */
 import { Activity } from "./dataclasses";
 
 export let Axxiom: Activity = new Activity(
