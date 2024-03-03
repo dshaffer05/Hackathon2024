@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Axxiom Escape Rooms </title>
+        <style>
+            /* Center-align the text */
+            h1 {
+                text-align: center;
+                font-size: 75px;
+                color: white;
+            }
+            .first-image {
+                margin: 0 auto;
+                display: block;
+                width: 700px;
+                border-radius: 100px;
+                border: 8px solid white; 
+                padding: 5px; 
+            }
+            .activity-info {
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            }
+            body {
+                font-size: 24px;
+                text-align: center;
+                background: linear-gradient(to bottom,rgb(113, 212, 177), rgb(52, 137, 110));
+        }
+        </style>
+    </head>
+    <body>
+        <h1 id="activity-name"></h1>
+        <img class="first-image" src="images/Zoo 2.jpg"> 
+        <div class="activity-info" id="activity-info"></div>
+
+        <script>
+            class Activity {
+                name; //Name of the activity
+                location; //Address of the activity
+                time; //Time that the activity is open/happening
+                price; // Price of the activity
+                website; // activity website
+                description; // any extra info
+
+            constructor(name, location, time, price, website, description) {
+                this.name = name;
+                this.location = location;
+                this.time = time;
+                this.price = price;
+                this.website = website;
+                this.description = description;
+            }
+        }
+
+        let Brandywine = new Activity(
+    "Brandywind Zoo",
+    "1001 N Park Dr. Wilmington, DE 19802",
+    "10AM-4PM",
+    "$9",
+    "https://brandywinezoo.org",
+    "A zoo full of animals located along the Brandywine river!"
+    )
+
+        document.getElementById("activity-name").innerText = Brandywine.name;
+        let activityInfoDiv = document.getElementById("activity-info");
+        activityInfoDiv.innerHTML += "<p><b>Location: " + Brandywine.location + "</b></p>";
+        activityInfoDiv.innerHTML += "<p><b>Time: " + Brandywine.time + "</b></p>";
+        activityInfoDiv.innerHTML += "<p><b>Price: " + Brandywine.price + "</b></p>";
+        activityInfoDiv.innerHTML += "<p> <b> Website: <a href='" + Brandywine.website + "'>" + Brandywine.name + " </b></a></p>";
+        activityInfoDiv.innerHTML += "<p> <b> Description: " + Brandywine.description + " <b> </p>";
+        </script> 
+
+        <br>
+        <br>
+        <a href="outdooractivites.html"><b>Return to Outdoor Activities Page!</b></a>
+
+    </body>
+</html>
