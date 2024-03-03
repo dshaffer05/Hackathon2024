@@ -58,7 +58,7 @@ export let MainEvent: Activity = new Activity(
 
 export let Taverna: Activity = new Activity(
     "Taverna Rustic Italian",
-    "121 Main St. Newark, DE 19711",
+    "121 Main St, Newark, DE 19711",
     "11:30AM-10:PM",
     "$20-$30",
     "https://www.tavernapdg.com/location/taverna-main-street/",
@@ -74,4 +74,13 @@ export let SportsCenter: Activity = new Activity(
     `Vince's Sports Center's main attraction is its mini-golf course, but you must not 
     forget itself incredible indoor hitting cage and range of arcade games`
 )
-export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum, SkyZone, MainEvent, Taverna, SportsCenter];
+
+export let HomeGrown: Activity = new Activity(
+    "Home Grown Cafe",
+    "126 E Main St, Newark, DE 19711",
+    "11:30AM-1AM",
+    "$10-$20",
+    "https://www.homegrowncafe.com",
+    "Enjoy a colorful eatery with vegetearian-friendly meals. Features local art and regular live music"
+)
+export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum, SkyZone, MainEvent, Taverna, SportsCenter, HomeGrown];
