@@ -84,4 +84,13 @@ export let HomeGrown: Activity = new Activity(
     "https://www.homegrowncafe.com",
     "Enjoy a colorful eatery with vegetearian-friendly meals. Features local art and regular live music"
 )
+
+export let WhiteClay: Activity = new Activity(
+    "White Clay Creek State Park",
+    "750 Thompson Station Rd, Newark, DE, 19711",
+    "8AM-4PM",
+    "Free",
+    "https://destateparks.com/whiteclaycreek",
+    "Go fishing, play disc golf, or explore nature with scenic trails at White Clay Creek State Park"
+)
 export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum, SkyZone, MainEvent, Taverna, SportsCenter, HomeGrown];
