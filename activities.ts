@@ -35,3 +35,5 @@ export let ArtMuseum: Activity = new Activity(
     "https://delart.org",
     "Explore classic collecttions of artwork and discover the deeper meaning behind the pieces!"
 )
+
+export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum];
