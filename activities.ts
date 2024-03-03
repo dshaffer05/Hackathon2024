@@ -35,3 +35,12 @@ export let ArtMuseum: Activity = new Activity(
     "https://delart.org",
     "Explore classic collecttions of artwork and discover the deeper meaning behind the pieces!"
 )
+
+export let Taverna: Activity = new Activity(
+    "Taverna Rustic Italian",
+    "121 Main St. Newark, DE 19711",
+    "11:30AM-10:PM",
+    "$20-$30",
+    "https://www.tavernapdg.com/location/taverna-main-street/",
+    "Enjoy rustic Italian cuisine with friends and family!"
+)
