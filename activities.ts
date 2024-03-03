@@ -36,6 +36,17 @@ export let ArtMuseum: Activity = new Activity(
     "Explore classic collecttions of artwork and discover the deeper meaning behind the pieces!"
 )
 
+
+
+
+
+
+
+
+
+
+
+
 export let Taverna: Activity = new Activity(
     "Taverna Rustic Italian",
     "121 Main St. Newark, DE 19711",
