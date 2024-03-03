@@ -6,7 +6,6 @@ export class Activity {
     website: string; // activity website
     description: string; // any extra info
 
-    //testing 
     constructor(name, location, time, price, website, description) {
         this.name = name;
         this.location = location;
