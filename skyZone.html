@@ -7,29 +7,32 @@
             h1 {
                 text-align: center;
                 font-size: 75px;
+                color: white;
             }
             .first-image {
                 margin: 0 auto;
                 display: block;
                 width: 700px;
                 border-radius: 100px;
-                border: 8px solid black; 
+                border: 8px solid white; 
                 padding: 5px; 
             }
             .activity-info {
             text-align: center;
             font-size: 30px;
+            color: white;
             }
             body {
                 font-size: 24px;
                 text-align: center;
                 background: linear-gradient(to bottom,rgb(157, 250, 143), rgb(72, 141, 61));
+                color: white;
         }
         </style>
     </head>
     <body>
         <h1 id="activity-name"></h1>
-        <img class="first-image" src="images/escape room 2.jpg"> 
+        <img class="first-image" src="images/sky zone.jpg"> 
         <div class="activity-info" id="activity-info"></div>
 
         <script>
@@ -51,22 +54,23 @@
             }
         }
 
-        let Axxiom = new Activity(
-            "Axxiom Escape Rooms Newark", 
-            "280 E Main St, Newark, DE 19711", 
-            "11AM-8:30PM",
-            "$28",
-            "https://www.axxiomnewark.com",
-            "Multiple escape rooms for groups 4-12 and any age!"
+        let sky = new Activity(
+            "Sky Zone Trampoline Park", 
+            "211 Executive Dr #3, Newark, DE 19702",
+            "4-8PM", 
+            "$26", 
+            "https://www.skyzone.com/newark", 
+            `Skyzone consists of a multitude of fun and active activities including dodgeball,
+            Ninja Warrior Course, Skyslam, and many more`
         );
 
-        document.getElementById("activity-name").innerText = Axxiom.name;
+        document.getElementById("activity-name").innerText = sky.name;
         let activityInfoDiv = document.getElementById("activity-info");
-        activityInfoDiv.innerHTML += "<p><b>Location: " + Axxiom.location + "</b></p>";
-        activityInfoDiv.innerHTML += "<p>Time: " + Axxiom.time + "</p>";
-        activityInfoDiv.innerHTML += "<p>Price: " + Axxiom.price + "</p>";
-        activityInfoDiv.innerHTML += "<p>Website: <a href='" + Axxiom.website + "'>" + Axxiom.name + "</a></p>";
-        activityInfoDiv.innerHTML += "<p>Description: " + Axxiom.description + "</p>";
+        activityInfoDiv.innerHTML += "<p><b>Location: " + sky.location + "</b></p>";
+        activityInfoDiv.innerHTML += "<p>Time: " + sky.time + "</p>";
+        activityInfoDiv.innerHTML += "<p>Price: " + sky.price + "</p>";
+        activityInfoDiv.innerHTML += "<p>Website: <a href='" + sky.website + "'>" + sky.name + "</a></p>";
+        activityInfoDiv.innerHTML += "<p>Description: " + sky.description + "</p>";
         </script> 
 
         <br>

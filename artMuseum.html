@@ -7,29 +7,32 @@
             h1 {
                 text-align: center;
                 font-size: 75px;
+                color: white;
             }
             .first-image {
                 margin: 0 auto;
                 display: block;
                 width: 700px;
                 border-radius: 100px;
-                border: 8px solid black; 
+                border: 8px solid white; 
                 padding: 5px; 
             }
             .activity-info {
             text-align: center;
             font-size: 30px;
+            color: white;
             }
             body {
                 font-size: 24px;
                 text-align: center;
                 background: linear-gradient(to bottom,rgb(157, 250, 143), rgb(72, 141, 61));
+                color: white;
         }
         </style>
     </head>
     <body>
         <h1 id="activity-name"></h1>
-        <img class="first-image" src="images/escape room 2.jpg"> 
+        <img class="first-image" src="images/art museum.jpg"> 
         <div class="activity-info" id="activity-info"></div>
 
         <script>
@@ -51,22 +54,22 @@
             }
         }
 
-        let Axxiom = new Activity(
-            "Axxiom Escape Rooms Newark", 
-            "280 E Main St, Newark, DE 19711", 
-            "11AM-8:30PM",
-            "$28",
-            "https://www.axxiomnewark.com",
-            "Multiple escape rooms for groups 4-12 and any age!"
+        let Art = new Activity(
+            "Delaware Art Musuem",
+            "2301 Kentmere Pkwy, Wilmington DE 19806",
+            "10AM-4PM",
+            "$7",
+            "https://delart.org",
+            "Explore classic collecttions of artwork and discover the deeper meaning behind the pieces!"
         );
 
-        document.getElementById("activity-name").innerText = Axxiom.name;
+        document.getElementById("activity-name").innerText = Art.name;
         let activityInfoDiv = document.getElementById("activity-info");
-        activityInfoDiv.innerHTML += "<p><b>Location: " + Axxiom.location + "</b></p>";
-        activityInfoDiv.innerHTML += "<p>Time: " + Axxiom.time + "</p>";
-        activityInfoDiv.innerHTML += "<p>Price: " + Axxiom.price + "</p>";
-        activityInfoDiv.innerHTML += "<p>Website: <a href='" + Axxiom.website + "'>" + Axxiom.name + "</a></p>";
-        activityInfoDiv.innerHTML += "<p>Description: " + Axxiom.description + "</p>";
+        activityInfoDiv.innerHTML += "<p><b>Location: " + Art.location + "</b></p>";
+        activityInfoDiv.innerHTML += "<p>Time: " + Art.time + "</p>";
+        activityInfoDiv.innerHTML += "<p>Price: " + Art.price + "</p>";
+        activityInfoDiv.innerHTML += "<p>Website: <a href='" + Art.website + "'>" + Art.name + "</a></p>";
+        activityInfoDiv.innerHTML += "<p>Description: " + Art.description + "</p>";
         </script> 
 
         <br>

@@ -7,29 +7,31 @@
             h1 {
                 text-align: center;
                 font-size: 75px;
+                color: white;
             }
             .first-image {
                 margin: 0 auto;
                 display: block;
                 width: 700px;
                 border-radius: 100px;
-                border: 8px solid black; 
+                border: 8px solid white; 
                 padding: 5px; 
             }
             .activity-info {
             text-align: center;
             font-size: 30px;
+            color: white;
             }
             body {
                 font-size: 24px;
                 text-align: center;
-                background: linear-gradient(to bottom,rgb(157, 250, 143), rgb(72, 141, 61));
+                background: linear-gradient(to bottom,rgb(113, 212, 177), rgb(52, 137, 110));
         }
         </style>
     </head>
     <body>
         <h1 id="activity-name"></h1>
-        <img class="first-image" src="images/escape room 2.jpg"> 
+        <img class="first-image" src="images/whiteClay.jpg"> 
         <div class="activity-info" id="activity-info"></div>
 
         <script>
@@ -51,27 +53,27 @@
             }
         }
 
-        let Axxiom = new Activity(
-            "Axxiom Escape Rooms Newark", 
-            "280 E Main St, Newark, DE 19711", 
-            "11AM-8:30PM",
-            "$28",
-            "https://www.axxiomnewark.com",
-            "Multiple escape rooms for groups 4-12 and any age!"
-        );
+        let Brandywine = new Activity(
+            "White Clay Creek State Park",
+            "750 Thompson Station Rd, Newark, DE, 19711",
+            "8AM-4PM",
+            "Free",
+            "https://destateparks.com/whiteclaycreek",
+            "Go fishing, play disc golf, or explore nature with scenic trails at White Clay Creek State Park"
+    )
 
-        document.getElementById("activity-name").innerText = Axxiom.name;
+        document.getElementById("activity-name").innerText = Brandywine.name;
         let activityInfoDiv = document.getElementById("activity-info");
-        activityInfoDiv.innerHTML += "<p><b>Location: " + Axxiom.location + "</b></p>";
-        activityInfoDiv.innerHTML += "<p>Time: " + Axxiom.time + "</p>";
-        activityInfoDiv.innerHTML += "<p>Price: " + Axxiom.price + "</p>";
-        activityInfoDiv.innerHTML += "<p>Website: <a href='" + Axxiom.website + "'>" + Axxiom.name + "</a></p>";
-        activityInfoDiv.innerHTML += "<p>Description: " + Axxiom.description + "</p>";
+        activityInfoDiv.innerHTML += "<p><b>Location: " + Brandywine.location + "</b></p>";
+        activityInfoDiv.innerHTML += "<p><b>Time: " + Brandywine.time + "</b></p>";
+        activityInfoDiv.innerHTML += "<p><b>Price: " + Brandywine.price + "</b></p>";
+        activityInfoDiv.innerHTML += "<p> <b> Website: <a href='" + Brandywine.website + "'>" + Brandywine.name + " </b></a></p>";
+        activityInfoDiv.innerHTML += "<p> <b> Description: " + Brandywine.description + " <b> </p>";
         </script> 
 
         <br>
         <br>
-        <a href="indooractivities.html"><b>Return to Indoor Activities Page</b></a>
+        <a href="outdooractivites.html"><b>Return to Outdoor Activities Page</b></a>
 
     </body>
 </html>
