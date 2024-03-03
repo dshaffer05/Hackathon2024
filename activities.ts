@@ -35,6 +35,7 @@ export let ArtMuseum: Activity = new Activity(
     "https://delart.org",
     "Explore classic collecttions of artwork and discover the deeper meaning behind the pieces!"
 )
+
 export let SkyZone: Activity = new Activity(
     "Sky Zone Trampoline Park", 
     "211 Executive Dr #3, Newark, DE 19702",
@@ -42,4 +43,25 @@ export let SkyZone: Activity = new Activity(
     "$26", 
     "https://www.skyzone.com/newark", 
     `Skyzone consists of a multitude of fun and active activities including dodgeball,
-    Ninja Warrior Course, Skyslam, and many more`)
+    Ninja Warrior Course, Skyslam, and many more`
+)
+
+export let Taverna: Activity = new Activity(
+    "Taverna Rustic Italian",
+    "121 Main St. Newark, DE 19711",
+    "11:30AM-10:PM",
+    "$20-$30",
+    "https://www.tavernapdg.com/location/taverna-main-street/",
+    "Enjoy rustic Italian cuisine with friends and family!"
+)
+
+export let MainEvent: Activity = new Activity(
+    "Main Event Newark",
+    "2900 Fashion Center Blvd, Newark, DE 19702",
+    "!!AM-12AM",
+    "$30+",
+    "http://www.mainevent.com/locations/delaware/newark",
+    `Main Event is full of a wide array of highly-enjoyable games
+     such as bowling, arcade games, virtual reality, or any other game you can think of!`
+)
+export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum, SkyZone, Taverna];
