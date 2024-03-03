@@ -35,3 +35,11 @@ export let ArtMuseum: Activity = new Activity(
     "https://delart.org",
     "Explore classic collecttions of artwork and discover the deeper meaning behind the pieces!"
 )
+export let SkyZone: Activity = new Activity(
+    "Sky Zone Trampoline Park", 
+    "211 Executive Dr #3, Newark, DE 19702",
+    "4-8PM", 
+    "$26", 
+    "https://www.skyzone.com/newark", 
+    `Skyzone consists of a multitude of fun and active activities including dodgeball,
+    Ninja Warrior Course, Skyslam, and many more`)
