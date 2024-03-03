@@ -22,7 +22,7 @@ export let NatureMuseum: Activity = new Activity(
     "Delaware Museum of Nature & Science",
     "4840 Kennet Pike, Wilmington, DE 19807",
     "10AM-4PM",
-    "14.50",
+    "$14.50",
     "https://delmns.org",
     "Explore, Discover, and Protect the environment that you live in!"
 )
@@ -35,5 +35,14 @@ export let ArtMuseum: Activity = new Activity(
     "https://delart.org",
     "Explore classic collecttions of artwork and discover the deeper meaning behind the pieces!"
 )
+
+export let SkyZone: Activity = new Activity(
+    "Sky Zone Trampoline Park", 
+    "211 Executive Dr #3, Newark, DE 19702",
+    "4-8PM", 
+    "$26", 
+    "https://www.skyzone.com/newark", 
+    `Skyzone consists of a multitude of fun and active activities including dodgeball,
+    Ninja Warrior Course, Skyslam, and many more`)
 
 export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum];
