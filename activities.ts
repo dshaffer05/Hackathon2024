@@ -45,4 +45,4 @@ export let SkyZone: Activity = new Activity(
     `Skyzone consists of a multitude of fun and active activities including dodgeball,
     Ninja Warrior Course, Skyslam, and many more`)
 
-export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum];
+export let activities = [Axxiom, Brandywine, NatureMuseum, ArtMuseum, SkyZone];
