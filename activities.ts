@@ -43,7 +43,7 @@ export let SkyZone: Activity = new Activity(
     "$26", 
     "https://www.skyzone.com/newark", 
     `Skyzone consists of a multitude of fun and active activities including dodgeball,
-    Ninja Warrior Course, Skyslam, and many more`
+    Ninja Warrior Course, Skyslam, and many more!`
 )
 
 export let Taverna: Activity = new Activity(
